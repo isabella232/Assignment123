@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout to inflate the dialogue with manual button -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/deleteInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="Confirm Delete">
+
+        <requestFocus />
+    </TextView>
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="Are You Sure you want to delete this?">
+
+        <requestFocus />
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_Button"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAdd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Yes" />
+
+        <Button
+            android:id="@+id/btnAdd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="No" />
+    </LinearLayout>
+
+</LinearLayout>
